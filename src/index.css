@@ -1,0 +1,7 @@
+.shadow-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .shadow-hover:hover {
+    transform: translateY(-2px);
+  }
