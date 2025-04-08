@@ -2,14 +2,17 @@ import useGlobalReducer from "../hooks/useGlobalReducer";
 import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 
+
+
 export const Home = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
   const { store, dispatch } = useGlobalReducer();
 
   useEffect(() => {
     const fetchAgendas = async () => {
       try {
         const response = await fetch(
-          'https://playground.4geeks.com/contact/agendas?offset=0&limit=100',
+          `${API_URL}agendas?offset=0&limit=100`,
           { headers: { 'Accept': 'application/json' } }
         );
         const data = await response.json();
