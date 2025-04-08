@@ -1,7 +1,14 @@
 .shadow-hover {
-    transition: all 0.3s ease;
-  }
-  
-  .shadow-hover:hover {
-    transform: translateY(-2px);
-  }
+  transition: all 0.3s ease;
+}
+
+.shadow-hover:hover {
+  transform: translateY(-2px);
+}
+
+.custom-width {
+  width: 80%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
