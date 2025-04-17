@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { ModalContacto } from '../components/ModalContacto';
-import { Link, useParams } from "react-router-dom";  // To use link for navigation and useParams to get URL parameters
-import useGlobalReducer from "../hooks/useGlobalReducer";  // Import a custom hook for accessing the global state
+import { Link, useParams } from "react-router-dom";
+import useGlobalReducer from "../hooks/useGlobalReducer";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
